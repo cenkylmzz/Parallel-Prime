@@ -1,0 +1,7 @@
+all: MPI.out
+
+MPI.out: hw2MPI.cpp
+    mpic++ -o MPI.out MPI.cpp
+
+clean:
+    rm -f MPI.out

@@ -1,0 +1,11 @@
+NVCC = nvcc
+
+TARGET = thrust.out
+
+SRC = thrust.cu
+
+all:
+    $(NVCC) $(SRC) -o $(TARGET)
+
+clean:
+    rm -f $(TARGET)
